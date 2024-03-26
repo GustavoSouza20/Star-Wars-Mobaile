@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Star Wars</string>
+
+    !!Info-1
+    <string name="info1.0">Mergulhe no universo da</string>
+    <string name="info1.1">famosa saga que conquistou diversos fãs</string>
+
+    !!info-2
+    <string name="info2.0">Aqui você, fã ou simples padawan, terá o</string>
+    <string name="info2.1">mundo completo da saga em suas mãos</string>
+
+    !!Tela de login
+    <string name="email">E-mail</string>
+    <string name="senha">senha</string>
+    <string name="login">Login</string>
+
+
+    !!Hall
+    <string name="oqueStarWars">O que é Star Wars?</string>
+    <string name="historia">História </string>
+    <string name="oCriador">O criador</string>
+    <string name="disney">Disney</string>
+
+
+    <string name="sobre">sobre</string>
+    <string name="teste">teste</string>
+    <string name="criarAvatar">criar seu avatar</string>
+
+    <string name="jogosLivros">Jogos e livros</string>
+
+
+    !!cadastro 1
+    <string name="nome">nome</string>
+
+    !!cadastro 2
+
+    <string name="cadastro">cadastro</string>
+    <string name="nivel">Nivel de Experiencia</string>
+    <string name="Padawan">Padawan</string>
+    <string name="Jedi">Jedi</string>
+    <string name="MestreJedi">Mestre Jedi</string>
+
+
+
+
+    !!Universal
+    <string name="Proximo">Proximo</string>
+    <string name="Criar">criar</string>
+</resources>

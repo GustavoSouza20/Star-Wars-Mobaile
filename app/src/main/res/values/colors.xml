@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cor_primaria">#FFE81F</color>
+    <color name="cor_segundaria">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="azul">#1976D2</color>
+    <color name="vermelho">#FF0000</color>
+    <color name="Laranja">#FA5E06</color>
+</resources>

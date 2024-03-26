@@ -33,7 +33,228 @@ data class ShipsScreen(
         Surface(
             modifier = Modifier.fillMaxSize()
         ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(color = colorResource(id = R.color.cor_segundaria)),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.SpaceBetween,
+            ) {
+                Column {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center
+                    ) {
 
+                        Image(
+                            painter = painterResource(id = R.drawable.logo),
+                            contentDescription = "Logo do aplicativo"
+                        )
+                    }
+
+                    DefaultTextField(
+                        valor = "Personagem",
+                        label = "agua"
+                    ) {
+
+                    }
+
+                }
+
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+
+                    Row {
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+
+
+                    }
+
+                    Row {
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+                    }
+                    Row {
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+
+
+                        Box(
+                            modifier = Modifier
+                                .size(120.dp)
+                                .padding(8.dp)
+                                .border(5.dp, color = Color.Green, shape = CircleShape)
+                                .background(
+                                    color = Color.Gray,
+                                    shape = CircleShape
+                                ) // Definindo o formato do círculo
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.homem1),
+                                contentDescription = "Imagem do Livro",
+                                modifier = Modifier.fillMaxSize()
+                            )
+
+                        }
+                    }
+                }
+
+                ButtomNav()
+            }
 
         }
     }

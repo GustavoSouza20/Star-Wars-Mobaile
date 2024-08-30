@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -32,9 +31,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import cafe.adriel.voyager.core.screen.Screen
+import cafe.adriel.voyager.navigator.LocalNavigator
+import cafe.adriel.voyager.navigator.currentOrThrow
 import com.example.starwars.R
 import com.example.starwars.components.ButtomNav
+import com.example.starwars.screens.Criador.CriadorScreen
+import com.example.starwars.screens.disney.DisneyScreen
+import com.example.starwars.screens.historia.HistoriaScreen
 import com.example.starwars.screens.home.components.ChipsButton
+import com.example.starwars.screens.oqueSw.OqueSw
 
 data class Home(
     val id: String
@@ -42,6 +47,8 @@ data class Home(
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     override fun Content() {
+
+        val navigator = LocalNavigator.currentOrThrow
 
         Surface(
             modifier = Modifier.fillMaxSize()
@@ -122,7 +129,10 @@ data class Home(
                                     .height(250.dp)
                                     .width(200.dp),
                                 colors = cardColors(colorResource(id = R.color.cor_primaria)),
-                                onClick = {}
+                                onClick = {
+
+                                        navigator.push(OqueSw(id = "OqueSw"))
+                                }
                             ) {
                                 Box(
                                     modifier = Modifier.fillMaxSize(),
@@ -157,7 +167,11 @@ data class Home(
                                     .height(250.dp)
                                     .width(200.dp),
                                 colors = cardColors(colorResource(id = R.color.cor_primaria)),
-                                onClick = {}
+                                onClick = {
+
+                                    navigator.push(HistoriaScreen(id = "HistoriaScreen"))
+
+                                }
                             ) {
                                 Box(
                                     modifier = Modifier.fillMaxSize(),
@@ -195,7 +209,9 @@ data class Home(
                                     .height(250.dp)
                                     .width(200.dp),
                                 colors = cardColors(colorResource(id = R.color.cor_primaria)),
-                                onClick = {}
+                                onClick = {
+                                    navigator.push(CriadorScreen(id = "CriadorScreen"))
+                                }
                             ) {
                                 Box(
                                     modifier = Modifier.fillMaxSize(),
@@ -229,7 +245,10 @@ data class Home(
                                     .height(250.dp)
                                     .width(200.dp),
                                 colors = cardColors(colorResource(id = R.color.cor_primaria)),
-                                onClick = {}
+                                onClick = {
+                                    navigator.push(DisneyScreen(id = "DisneyScree"))
+
+                                }
                             ) {
                                 Box(
                                     modifier = Modifier.fillMaxSize(),
